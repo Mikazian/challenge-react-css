@@ -1,0 +1,99 @@
+@import "variable.scss";
+
+@mixin card($color, $width, $height, $rounded) {
+    background-color: $color;
+    width: $width;
+    height: $height;
+    border-radius: $rounded;
+    box-shadow: $shadow;
+    overflow: hidden;
+}
+
+.card {
+    @include card($light, 25rem, auto, 7px);
+
+    & .card-header > .card-img {
+        object-fit: cover;
+        width: 100%;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .card-body {
+        padding: $spacing1 $spacing2;
+
+        & .card-content {
+            border-bottom: 1px solid $tertiary;
+            margin-bottom: $spacing2;
+        }
+
+        & .card-title {
+            font-size: 2rem;
+        }
+
+        & .card-title-description {
+            font-size: 1rem;
+            margin-bottom: $spacing1;
+        }
+
+        & .card-description {
+            font-size: 0.7rem;
+            color: $dark-light;
+            margin-bottom: $spacing2;
+        }
+
+        & .card-note {
+            display: flex;
+            align-items: center;
+            gap: $spacing;
+            margin-bottom: $spacing2;
+
+            & svg {
+                margin-right: 0.25rem;
+                color: $secondary;
+                fill: $secondary;
+            }
+
+            > p {
+                font-size: 0.7rem;
+                color: $dark-light;
+            }
+        }
+    }
+
+    .card-footer {
+        padding-bottom: $spacing1;
+
+        > h4 {
+            font-size: 1rem;
+            margin-bottom: $spacing2;
+        }
+
+        > ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: $spacing;
+            row-gap: $spacing2;
+            list-style: none;
+            margin-bottom: $spacing3;
+
+            & li {
+                font-family: $font-text;
+                font-size: 0.7rem;
+                text-align: center;
+
+                & a {
+                    color: $dark;
+                    background-color: $tertiary;
+                    border-radius: 50px;
+                    padding: $spacing1 $spacing3;
+                }
+            }
+        }
+
+        & .card-action {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+    }
+}

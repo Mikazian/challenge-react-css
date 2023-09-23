@@ -1,0 +1,37 @@
+// Importation des polices Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap");
+
+// Importation des variables CSS
+@import "style/variable.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $primary;
+  color: $dark;
+
+  & main {
+    padding: $spacing2;
+
+    > h1 {
+      margin-bottom: $spacing4;
+    }
+  }
+
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-title;
+  }
+
+  & p {
+    font-family: $font-text;
+  }
+}
