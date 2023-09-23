@@ -14,7 +14,7 @@ export default function CardSubtitle() {
 
   return (
     <>
-      <h4>Subtitle</h4>
+      <h4>Sous-titre</h4>
       <ul className="item-list">{items}</ul>
     </>
   );
