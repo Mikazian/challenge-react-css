@@ -8,4 +8,4 @@ Pour ce défi, j'ai utilisé le préprocesseur SASS, qui me permet d'écrire du 
 
 # challenge-react-css
 
-![image](https://github.com/Mikazian/challenge-react-css/assets/120253140/09e8c9ee-5b9a-49f5-8c5f-9da0298b50b0)
+![image](https://github.com/Mikazian/challenge-react-css/assets/120253140/936f2b73-579b-49de-b94b-a71dc84ed22c)
